@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Namecheap Web Plans</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: #ffffff;
+    color: #1a1a1a;
+    line-height: 1.6;
+    padding: 40px 20px 80px;
+  }
+
+  .container {
+    max-width: 760px;
+    margin: 0 auto;
+  }
+
+  /* ---------- Header ---------- */
+  header {
+    text-align: center;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #eee;
+  }
+
+  header h1 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #1a1a1a;
+  }
+
+  /* ---------- Hero ---------- */
+  .hero {
+    text-align: center;
+    max-width: 600px;
+    margin: 40px auto 60px;
+    color: #6b7280;
+    font-size: 1.05rem;
+  }
+
+  /* ---------- Section title ---------- */
+  .section-title {
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #DE3723;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  /* ---------- Plans list ---------- */
+  .plans {
+    list-style: none;
+    margin-bottom: 70px;
+  }
+
+  .plan {
+    padding: 22px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  .plan:last-child {
+    border-bottom: none;
+  }
+
+  .plan-row {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  .plan-name {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    white-space: nowrap;
+  }
+
+  .plan-dots {
+    flex: 1;
+    border-bottom: 1px dotted #cbd0d6;
+    margin: 0 8px;
+    transform: translateY(-4px);
+  }
+
+  .plan-price {
+    font-size: 1.15rem;
+    font-weight: 800;
+    color: #DE3723;
+    white-space: nowrap;
+  }
+
+  .plan-price span {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #6b7280;
+  }
+
+  .plan-note {
+    font-size: 0.9rem;
+    color: #6b7280;
+    margin-top: 6px;
+    max-width: 620px;
+  }
+
+  /* ---------- Security block ---------- */
+  .security {
+    background: #f9fafb;
+    border-top: 3px solid #DE3723;
+    border-radius: 6px;
+    padding: 30px 28px;
+  }
+
+  .security h2 {
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #1a1a1a;
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .security ul {
+    list-style: none;
+  }
+
+  .security li {
+    padding: 8px 0 8px 26px;
+    position: relative;
+    font-size: 0.95rem;
+    color: #374151;
+  }
+
+  .security li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #DE3723;
+    font-weight: 700;
+  }
+
+  /* ---------- Mobile ---------- */
+  @media (max-width: 520px) {
+    header h1 { font-size: 1.6rem; letter-spacing: 1px; }
+    .plan-name, .plan-price { font-size: 1rem; }
+    .plan-dots { display: none; }
+    .plan-row { flex-direction: column; align-items: flex-start; gap: 2px; }
+  }
+</style>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Header -->
+    <header>
+      <h1>NAMECHEAP</h1>
+    </header>
+
+    <!-- Hero -->
+    <p class="hero">
+      This is one of the pages of Namecheap. View the plans below — you can subscribe later.
+    </p>
+
+    <!-- Plans -->
+    <h2 class="section-title">Web Hosting Plans</h2>
+
+    <ul class="plans">
+
+      <li class="plan">
+        <div class="plan-row">
+          <span class="plan-name">Stellar Pro</span>
+          <span class="plan-dots"></span>
+          <span class="plan-price">$28.99 <span>/ year</span></span>
+        </div>
+        <p class="plan-note">
+          Perfect for a single website. Includes a free domain for the first year, 50 GB SSD storage, and unmetered bandwidth.
+        </p>
+      </li>
+
+      <li class="plan">
+        <div class="plan-row">
+          <span class="plan-name">Stellar Advance</span>
+          <span class="plan-dots"></span>
+          <span class="plan-price">$31.50 <span>/ year</span></span>
+        </div>
+        <p class="plan-note">
+          Best for growing sites. Comes with 100 GB SSD storage, unlimited websites, and free domain privacy for life.
+        </p>
+      </li>
+
+      <li class="plan">
+        <div class="plan-row">
+          <span class="plan-name">Stellar Liquid</span>
+          <span class="plan-dots"></span>
+          <span class="plan-price">$33.76 <span>/ year</span></span>
+        </div>
+        <p class="plan-note">
+          Built for high-traffic projects. Offers unlimited SSD storage, top-tier performance, and priority 24/7 support.
+        </p>
+      </li>
+
+    </ul>
+
+    <!-- Security -->
+    <section class="security">
+      <h2>🔒 Enhancing Security</h2>
+      <ul>
+        <li>Free SSL certificate on every plan</li>
+        <li>Domain privacy protection included</li>
+        <li>Automatic daily backups</li>
+        <li>Malware &amp; spam scanning</li>
+        <li>24/7 security monitoring &amp; support</li>
+      </ul>
+    </section>
+
+  </div>
+
+</body>
+</html>
